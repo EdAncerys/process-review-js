@@ -7,8 +7,12 @@ describe('MiddleLetter', function () {
     letter = new MiddleLetter();
   });
 
-  it('should be able to return a if a passed in', function () {
+  it('should be able to return a if a passed in', () => {
     expect(letter.returnMidLetter('a')).toEqual('a');
+  });
+
+  it('should be able to return ab if ab passed in', () => {
+    expect(letter.returnMidLetter('ab')).toEqual('ab');
   });
 
   describe('a block', function () {});
