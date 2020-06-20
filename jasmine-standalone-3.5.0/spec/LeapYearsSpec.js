@@ -22,4 +22,8 @@ describe('Leap Years', function () {
   it('should be able to return true if 1904 passed in', () => {
     expect(years.returnLeapYear(1904)).toEqual(true);
   });
+
+  it('should be able to return true if 1624 passed in', () => {
+    expect(years.returnLeapYear(1624)).toEqual(true);
+  });
 });
