@@ -2,6 +2,10 @@
 
 class TenMinuteWalk {
   returnTenMinute(walk) {
-    return false;
+    if (walk.length == 2) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
