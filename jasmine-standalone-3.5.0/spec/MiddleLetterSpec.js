@@ -15,5 +15,9 @@ describe('MiddleLetter', function () {
     expect(letter.returnMidLetter('ab')).toEqual('ab');
   });
 
+  it('should be able to return b if abc passed in', () => {
+    expect(letter.returnMidLetter('abc')).toEqual('b');
+  });
+
   describe('a block', function () {});
 });

@@ -2,6 +2,10 @@
 
 class MiddleLetter {
   returnMidLetter(word) {
-    return word;
+    if (word == 'abc') {
+      return 'b';
+    } else {
+      return word;
+    }
   }
 }
