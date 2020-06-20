@@ -7,7 +7,7 @@ describe('Leap Years', function () {
     walk = new TenMinuteWalk();
   });
 
-  it('should be able to return true if 2000 passed in', () => {
-    // expect(years.returnMinuteWalk(2000)).toEqual(true);
+  it('should be able to return false if 2000 w in', () => {
+    expect(walk.returnTenMinute(['w'])).toEqual(false);
   });
 });

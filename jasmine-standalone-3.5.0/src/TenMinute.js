@@ -1,5 +1,7 @@
 'use strict';
 
 class TenMinuteWalk {
-  returnTenMinute(walk) {}
+  returnTenMinute(walk) {
+    return false;
+  }
 }
