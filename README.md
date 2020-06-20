@@ -1,59 +1,83 @@
-Get the Middle Letter(s)
+# Process Review
 
-Requirements
+_Get better at programming fluently_
 
-The program runs in a REPL like irb or in a browser console.
+What skills and behaviours does a great dev have? Have a look [here](./observation_guidance.md) to read through them. While not exhaustive, if you are able to exhibit these to a high standard, you should be confident of your skills.
 
-It's fine to use Ruby or JavaScript.
+So, you ask, how do I get better?
 
-Your job is to return the middle letter of a word. If the word's length is odd, return the middle letter. If the word's length is even, return the middle 2 letters.
+Practice.
 
-Acceptance Criteria
+## Process Workshops
 
-get_middle("test") # => "es"
-get_middle("testing") # => "t"
-get_middle("middle") # => "dd"
-get_middle("A") # => "A"
-get_middle("of") # => "of"
+### What are they?
 
-Leap Years
+A coach will facilitate a session where you and up to 15 others from any cohort will pair up and get close feedback on your approach to programming.
 
-A simple tool that will tell you whether a year is a leap year, according to the following rules:
+### What will happen?
 
-All years divisible by 400 ARE leap years (e.g. 2000 was a leap year)
-All years divisible by 100 but not by 400 are NOT leap years (e.g. 1700, 1800 and 1900 were not leap years)
-All years divisible by 4 and not by 100 ARE leap years (e.g. 2004, 2008 and 2012 were leap years)
-All years not divisible by 4 are NOT leap years (e.g. 2009, 2010 and 2011 were not leap years)
-Example output
+You’ll pair up and spend 30 mins observing your partner record their screen and TDD an exercise, while you use a rubric to note down what and how they do in order to give them useful feedback.
 
-2.4.1 :001 > require './lib/leap_years.rb'
-=> true
-2.4.1 :002 > leap_year?(2000)
-=> true
-2.4.1 :003 > leap_year?(1970)
-=> false
-2.4.1 :004 > leap_year?(1900)
-=> false
-2.4.1 :005 > leap_year?(1988)
-=> true
-2.4.1 :006 > leap_year?(1500)
-=> false
-Take a ten minute walk
+And then you switch - you’ll record your screen and TDD an exercise for 30 mins while your partner observes to give feedback
 
-Create a function that will return true if the walk will take you exactly ten minutes and will return you to your starting point.
+### Exercises
 
-Requirements
+Here are the possible programs to build. Complete them in the following order:
 
-You are meeting a friend in New York City, where all roads are laid out in a perfect grid. You arrived ten minutes too early to the appointment, so you decided to take the opportunity to go for a short walk.
-The city provides its tourists with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk. eg. ['n', 's', 'w', 'e']
+1. [Middle letter](./exercises/middle_letter)
+1. [Leap Years](./exercises/leap_years)
+1. [Ten minute walk](./exercises/10_minute_walk)
+1. [Scrabble solver](./exercises/scrabble_solver)
+1. [Ten Green Bottles](./exercises/ten_green_bottles)
+1. [Checkout](./exercises/checkout)
+1. [Change Converter](./exercises/change_converter)
+1. [Echo](./exercises/echo)
+1. [Bank](./exercises/bank)
 
-You always walk only a single block in a direction and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
+### Who should do this?
 
-Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
+Anyone at any stage of their learning here at Makers. You could do it during week 1 or week 7 or week 15 or any week you are here.
 
-Acceptance Criteria
+The objective is simply to practice and get feedback to improve your approach to programming.
 
-ten_minute_walk?(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']) # => true
-ten_minute_walk?(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']) # => false
-ten_minute_walk?(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']) # => false
-ten_minute_walk?(['w', 's']) # => false
+### Why should I do this?
+
+For a number of reasons.
+
+Practicing writing code while under observation helps show you how good your current process is - where do you get stuck, how are you debugging, how's your approach to TDD - and therefore an accelerated way to improve.
+
+Usefully you'll get feedback from your pair, and a recording to re-watch yourself write code.
+
+It's great feedback and confidence-boosting to show yourself you're getting better at programming.
+
+### What do I need to bring?
+
+It's helpful to bring the following
+
+- pen and paper for any planning you do
+- a timer for when you're observing someone write code.
+- a set of process cards.
+
+### Process cards
+
+Ask a coach if you'd like a set of process cards.
+
+For reference, here is the outline shown on the back of the process cards:
+
+![process overview](./images/process_outline.png)
+
+## Individual
+
+You don't need to attend a process workshop to benefit from this. Recording your own screen while you write some code is a useful tool to help you improve your development process.
+
+To make it the most useful, follow these steps:
+
+1. Reflect on your process - decide what part of your process you want to focus on.
+2. Find a small exercise, or kata to practice it. (Start really small and simple and then extend from there)
+3. Set a timer for 30 mins.
+4. Record your screen
+5. Program.
+6. Review your recorded process, and use rubric to note down where to improve.
+7. Repeat.
+
+Feel free to reach out to a coach during coaching hours to sit with you and give you feedback. (They'll watch it 3x-5x times the speed)
