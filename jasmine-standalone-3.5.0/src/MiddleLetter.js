@@ -2,12 +2,7 @@
 
 class MiddleLetter {
   returnMidLetter(word) {
-    if (word == 'abc') {
-      return 'b';
-    } else if (word == 'abcd') {
-      return 'bc';
-    } else {
-      return word;
-    }
+    const l = Math.floor(word.length / 2);
+    return word.length % 2 == 0 ? word.slice(l - 1, l + 1) : word[l];
   }
 }
