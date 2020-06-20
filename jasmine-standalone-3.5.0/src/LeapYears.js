@@ -2,7 +2,7 @@
 
 class LeapYears {
   returnLeapYear(year) {
-    if (year == 2000 || year == 1988 || year == 1904) {
+    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
       return true;
     } else {
       return false;
