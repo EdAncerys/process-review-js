@@ -23,7 +23,7 @@ class TenMinuteWalk {
       }
     });
 
-    if (this.w == this.e) {
+    if (this.w == this.e && this.s == this.n) {
       return true;
     } else {
       return false;

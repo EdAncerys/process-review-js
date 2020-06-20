@@ -14,4 +14,8 @@ describe('Leap Years', function () {
   it('should be able to return false if w, e passed in', () => {
     expect(walk.returnTenMinute(['w', 'e'])).toEqual(true);
   });
+
+  it('should be able to return false if s, n, n passed in', () => {
+    expect(walk.returnTenMinute(['s', 'n', 'n'])).toEqual(false);
+  });
 });
