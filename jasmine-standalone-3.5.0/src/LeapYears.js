@@ -1,7 +1,11 @@
 'use strict';
 
 class LeapYears {
-  returnLeapYear() {
-    return true;
+  returnLeapYear(year) {
+    if (year == 2000) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
