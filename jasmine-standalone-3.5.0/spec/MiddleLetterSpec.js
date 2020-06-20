@@ -23,5 +23,7 @@ describe('MiddleLetter', function () {
     expect(letter.returnMidLetter('abcd')).toEqual('bc');
   });
 
-  describe('a block', function () {});
+  it('should be able to return aS if JavaScript passed in', () => {
+    expect(letter.returnMidLetter('JavaScript')).toEqual('Sc');
+  });
 });
