@@ -7,7 +7,7 @@ describe('Leap Years', function () {
     years = new LeapYears();
   });
 
-  it('should be able to return a if a passed in', () => {
-    // expect(years.returnLeapYears('a')).toEqual('a');
+  it('should be able to return true if 2000 passed in', () => {
+    expect(years.returnLeapYear(2000)).toEqual(true);
   });
 });

@@ -1,3 +1,7 @@
 'use strict';
 
-class LeapYears {}
+class LeapYears {
+  returnLeapYear() {
+    return true;
+  }
+}
