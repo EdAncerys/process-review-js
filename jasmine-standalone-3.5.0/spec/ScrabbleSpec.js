@@ -13,4 +13,8 @@ describe('Scrabble', () => {
   it('should be able to return 2 if D passed in', () => {
     expect(scrabble.scrabbleScore('D')).toEqual(2);
   });
+
+  it('should be able to return 3 if B passed in', () => {
+    expect(scrabble.scrabbleScore('B')).toEqual(3);
+  });
 });
