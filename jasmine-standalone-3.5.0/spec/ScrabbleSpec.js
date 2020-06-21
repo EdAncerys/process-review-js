@@ -21,4 +21,8 @@ describe('Scrabble', () => {
   it('should be able to return 4 if F passed in', () => {
     expect(scrabble.scrabbleScore('F')).toEqual(4);
   });
+
+  it('should be able to return 5 if K passed in', () => {
+    expect(scrabble.scrabbleScore('K')).toEqual(5);
+  });
 });
