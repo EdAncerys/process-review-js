@@ -1,13 +1,27 @@
 'use strict';
 
 class Scrabble {
+  constructor() {
+    this.score = 0;
+    this.one = ['A'];
+    this.two = ['D', 'G'];
+    this.three = ['B', 'C', 'M', 'P'];
+    this.for = ['F', 'H', 'V', 'W', 'Y'];
+    this.five = ['K'];
+    this.eight = ['J', 'X'];
+    this.ten = ['Q', 'Z'];
+  }
+
   scrabbleScore(word) {
-    if (word == 'A') return 1;
-    if (word == 'D') return 2;
-    if (word == 'B') return 3;
-    if (word == 'F') return 4;
-    if (word == 'K') return 5;
-    if (word == 'J') return 8;
-    if (word == 'Q') return 10;
+    word.split('').forEach((letter) => {
+      if (this.one.includes(letter)) this.score += 1;
+      if (this.two.includes(letter)) this.score += 2;
+      if (this.three.includes(letter)) this.score += 3;
+      if (this.for.includes(letter)) this.score += 4;
+      if (this.five.includes(letter)) this.score += 5;
+      if (this.eight.includes(letter)) this.score += 8;
+      if (this.ten.includes(letter)) this.score += 10;
+    });
+    return this.score;
   }
 }
