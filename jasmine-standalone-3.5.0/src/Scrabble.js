@@ -5,5 +5,6 @@ class Scrabble {
     if (word == 'A') return 1;
     if (word == 'D') return 2;
     if (word == 'B') return 3;
+    if (word == 'F') return 4;
   }
 }
