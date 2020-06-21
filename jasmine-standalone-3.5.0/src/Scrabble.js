@@ -8,5 +8,6 @@ class Scrabble {
     if (word == 'F') return 4;
     if (word == 'K') return 5;
     if (word == 'J') return 8;
+    if (word == 'Q') return 10;
   }
 }

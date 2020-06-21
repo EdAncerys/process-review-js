@@ -29,4 +29,8 @@ describe('Scrabble', () => {
   it('should be able to return 8 if J passed in', () => {
     expect(scrabble.scrabbleScore('J')).toEqual(8);
   });
+
+  it('should be able to return 10 if Q passed in', () => {
+    expect(scrabble.scrabbleScore('Q')).toEqual(10);
+  });
 });
