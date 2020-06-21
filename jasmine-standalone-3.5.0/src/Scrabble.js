@@ -1,3 +1,7 @@
 'use strict';
 
-class Scrabble {}
+class Scrabble {
+  scrabbleScore() {
+    return 1;
+  }
+}

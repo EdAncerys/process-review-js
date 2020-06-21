@@ -1,8 +1,12 @@
 'use strict';
 
 describe('Scrabble', () => {
-  var scrabbleScore;
+  var scrabble;
   beforeEach(function () {
-    scrabbleScore = new Scrabble();
+    scrabble = new Scrabble();
+  });
+
+  it('should be able to return 1 if A passed in', () => {
+    expect(scrabble.scrabbleScore('A')).toEqual(1);
   });
 });
