@@ -3,7 +3,7 @@
 class Scrabble {
   constructor() {
     this.score = 0;
-    this.one = ['A'];
+    this.one = ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'];
     this.two = ['D', 'G'];
     this.three = ['B', 'C', 'M', 'P'];
     this.for = ['F', 'H', 'V', 'W', 'Y'];

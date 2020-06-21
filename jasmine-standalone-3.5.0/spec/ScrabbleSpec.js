@@ -40,5 +40,9 @@ describe('Scrabble', () => {
     it('should be able to return 3 if AAA passed in', () => {
       expect(scrabble.scrabbleScore('AAA')).toEqual(3);
     });
+
+    it('should be able to return 41 if OXYPHENBUTAZONE passed in', () => {
+      expect(scrabble.scrabbleScore('OXYPHENBUTAZONE')).toEqual(41);
+    });
   });
 });
