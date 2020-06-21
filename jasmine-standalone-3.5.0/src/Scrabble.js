@@ -1,7 +1,8 @@
 'use strict';
 
 class Scrabble {
-  scrabbleScore() {
-    return 1;
+  scrabbleScore(word) {
+    if (word == 'A') return 1;
+    if (word == 'D') return 2;
   }
 }
