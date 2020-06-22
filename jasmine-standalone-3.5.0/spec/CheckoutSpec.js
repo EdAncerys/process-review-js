@@ -29,14 +29,18 @@ describe('Checkout', () => {
       expect(checkout.totalPurchase('AA')).toEqual(100);
     });
 
-    it('should be able to return 230 if AABBCCDD passed in', () => {
-      expect(checkout.totalPurchase('AABBCCDD')).toEqual(230);
+    it('should be able to return 200 if AABCCDD passed in', () => {
+      expect(checkout.totalPurchase('AABCCDD')).toEqual(200);
     });
   });
 
   describe('Cart with special offers in', () => {
     it('should be able to return 130 if AAA passed in', () => {
       expect(checkout.totalPurchase('AAA')).toEqual(130);
+    });
+
+    it('should be able to return 45 if BB passed in', () => {
+      expect(checkout.totalPurchase('BB')).toEqual(45);
     });
   });
 });
