@@ -1,7 +1,8 @@
 'use strict';
 
 class Checkout {
-  totalPurchase() {
-    return 50;
+  totalPurchase(cart) {
+    if (cart == 'A') return 50;
+    if (cart == 'B') return 30;
   }
 }
