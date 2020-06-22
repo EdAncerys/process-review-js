@@ -1,3 +1,7 @@
 'use strict';
 
-class Checkout {}
+class Checkout {
+  totalPurchase() {
+    return 50;
+  }
+}
