@@ -1,10 +1,17 @@
 'use strict';
 
 class Checkout {
+  constructor() {
+    this.cartTotal = 0;
+  }
+
   totalPurchase(cart) {
-    if (cart == 'A') return 50;
-    if (cart == 'B') return 30;
-    if (cart == 'C') return 20;
-    if (cart == 'D') return 15;
+    cart.split('').forEach((product) => {
+      if (product == 'A') this.cartTotal += 50;
+      if (product == 'B') this.cartTotal += 30;
+      if (product == 'C') this.cartTotal += 20;
+      if (product == 'D') this.cartTotal += 15;
+    });
+    return this.cartTotal;
   }
 }
