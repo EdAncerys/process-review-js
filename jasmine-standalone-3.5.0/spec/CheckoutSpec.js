@@ -28,5 +28,9 @@ describe('Checkout', () => {
     it('should be able to return 100 if AA passed in', () => {
       expect(checkout.totalPurchase('AA')).toEqual(100);
     });
+
+    it('should be able to return 230 if AABBCCDD passed in', () => {
+      expect(checkout.totalPurchase('AABBCCDD')).toEqual(230);
+    });
   });
 });
