@@ -17,4 +17,8 @@ describe('Checkout', () => {
   it('should be able to return 20 if C passed in', () => {
     expect(checkout.totalPurchase('C')).toEqual(20);
   });
+
+  it('should be able to return 15 if D passed in', () => {
+    expect(checkout.totalPurchase('D')).toEqual(15);
+  });
 });
