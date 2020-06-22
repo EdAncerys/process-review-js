@@ -33,4 +33,10 @@ describe('Checkout', () => {
       expect(checkout.totalPurchase('AABBCCDD')).toEqual(230);
     });
   });
+
+  describe('Cart with special offers in', () => {
+    it('should be able to return 130 if AAA passed in', () => {
+      expect(checkout.totalPurchase('AAA')).toEqual(130);
+    });
+  });
 });
