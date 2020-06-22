@@ -42,5 +42,9 @@ describe('Checkout', () => {
     it('should be able to return 45 if BB passed in', () => {
       expect(checkout.totalPurchase('BB')).toEqual(45);
     });
+
+    it('should be able to return 175 if ABABA passed in', () => {
+      expect(checkout.totalPurchase('ABABA')).toEqual(175);
+    });
   });
 });
