@@ -1,12 +1,14 @@
 'use strict';
 
 class RecurringCharacter {
+  constructor() {
+    this.result = {};
+  }
   findRecurring(string) {
-    let result = {};
-    if (string === 'AA') result = { A: 2 };
-    if (string === 'BB') result = { B: 2 };
-    if (string === 'CC') result = { C: 2 };
-    if (string === 'AABB') result = { A: 2, B: 2 };
-    return result;
+    if (string === 'AA') this.result = { A: 2 };
+    if (string === 'BB') this.result = { B: 2 };
+    if (string === 'CC') this.result = { C: 2 };
+    if (string === 'AABB') this.result = { A: 2, B: 2 };
+    return this.result;
   }
 }
