@@ -5,11 +5,15 @@ class RecurringCharacter {
     this.result = {};
   }
   findRecurring(string) {
-    if (string === 'AA') this.result = { A: 2 };
-    if (string === 'BB') this.result = { B: 2 };
-    if (string === 'CC') this.result = { C: 2 };
-    if (string === 'AABB') this.result = { A: 2, B: 2 };
-    if (string === 'AAABB') this.result = { A: 3, B: 2 };
+    string.split('').forEach((element) => {
+      if (Object.keys(this.result).includes(element)) {
+        this.result[element] += 1;
+        console.log(this.result);
+      } else {
+        console.log('else', this.result);
+        this.result[element] = 1;
+      }
+    });
     return this.result;
   }
 }
