@@ -7,6 +7,10 @@ describe('RecurringCharacter', () => {
   });
 
   it('should able to return {A:1} if AA passed in', () => {
-    expect(character.findRecurring('AA')).toEqual({ A: 1 });
+    expect(character.findRecurring('AA')).toEqual({ A: 2 });
+  });
+
+  it('should be able to return {B:2} if BB passed in', () => {
+    expect(character.findRecurring('BB')).toEqual({ B: 2 });
   });
 });
