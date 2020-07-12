@@ -1,3 +1,7 @@
 'use strict';
 
-class RecurringCharacter {}
+class RecurringCharacter {
+  findRecurring() {
+    return { A: 1 };
+  }
+}
