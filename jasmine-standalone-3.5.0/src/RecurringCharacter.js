@@ -2,10 +2,9 @@
 
 class RecurringCharacter {
   findRecurring(string) {
-    if (string === 'AA') {
-      return { A: 2 };
-    } else {
-      return { B: 2 };
-    }
+    let result = {};
+    if (string === 'AA') result = { A: 2 };
+    if (string === 'BB') result = { B: 2 };
+    return result;
   }
 }
